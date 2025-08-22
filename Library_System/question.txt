@@ -1,0 +1,30 @@
+Problem
+Design a simple system where users can borrow and return books from a library. Each book can only be borrowed by one user at a time.
+
+Hints
+
+Classes:
+
+Book → title, author, is_borrowed
+
+User → name, borrowed_books
+
+Library → collection of books, methods to borrow/return
+
+Methods:
+
+Library.borrow_book(user, book)
+
+Library.return_book(user, book)
+
+Relationships:
+
+A User has many Books.
+
+A Book belongs to at most one User.
+
+Stretch goals
+
+Add due dates.
+
+Charge late fees.
