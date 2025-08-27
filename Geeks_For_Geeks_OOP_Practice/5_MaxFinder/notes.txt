@@ -1,0 +1,4 @@
+Exercise 5: Create a class MaxFinder that identifies the largest number in a list.
+
+Completion notes:
+Straight forward problem since we used the max method built into python. 
