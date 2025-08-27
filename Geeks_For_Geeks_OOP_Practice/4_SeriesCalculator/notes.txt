@@ -1,3 +1,10 @@
 Exercise 4: Design a class SeriesCalculator that calculates the sum of an arithmetic series.
 
 Completition Notes:
+- This problem was a medium for me because I did not understand the formula.
+    - After reviewing the solution I understand how the formula gets encorporated into code.
+    - I had tried to create an intialization of the class but it doesn't make sense to since this class doesn't rely 
+    on previous values or attributes but rather each operation uses the values once. So instead we created one method within
+    the calculator that will calculate the sum of the arithmtic series.
+    - It is worth trying the formula out on paper once to understand the calculation and the computation. Use this in future 
+    problems. 
