@@ -1,0 +1,12 @@
+Exercise 2: Develop a class Calculator with methods to add and subtract two numbers.
+
+Completion Notes:
+    - Problem was easy we made a class Calculator without an intializor. Within this class we defined two methods.
+    One method add to add x and y and then method minus x - y that subtracts y from x. 
+    - We considered but did not implement a state attirbute that will contain the state of the last calculated value.
+    - This is similar to real world calculators since they need to hold previous values for chain operations.
+        - Did not end up implementing because it was out of problem scope. But this thought process can be 
+        thought of again in problems where previous state is used in operations. 
+        - To implement the state functionality we would intialize a attribute called state.
+        This state attirbute would intialize to the value 0 as default. Any following calculator methods would compute and update state with the value. A clear method that resets state to 0 would also need to be implemented. 
+
