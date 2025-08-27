@@ -1,0 +1,7 @@
+Exercise 3: Build a class Employee with multiple constructors that can initialize an employee object in different ways.
+
+Completition Notes:
+    - This problem was easy. To solve it create a Employee class which contains three attirbutes name, age, company.
+    Set the intial values of these in the definiton parameters.
+    (name="John Doe", age=21, company="N/A")
+    - We used the __str__ method to reperesent the employee class as a string. This lets us print(Employee) in a formatted string.
