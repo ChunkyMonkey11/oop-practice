@@ -1,0 +1,15 @@
+Cart (composition > inheritance)
+
+Goal: Model a minimal cart with add/remove and a total.
+
+Build:
+
+Cart holds List[LineItem].
+
+Cart.add(item), Cart.remove(sku), Cart.total() -> Money.
+
+Edges: duplicate SKU merges vs. separate lines (pick one); removing missing SKU; empty cart total.
+
+Suggested classes: Money, LineItem, Cart.
+
+Tests: add 2 items, remove 1, total matches.
