@@ -1,0 +1,24 @@
+Damn this problem was hard
+
+What issues did we run into????
+    -We had no idea how to follow the constraint of qty being greater then 0.
+    To solve this in the constructor we wrote an if condition that checks the quatity,
+    if the quantity is less then or equal to 0 we throw a ValueError.
+
+    -When working on the remove feature we had been confused on how we will check each SKU attribute of all
+    the ListItems in the list. Ultimately after looking at another solution we learned about enumerate.
+    By using enumerate we are able to keep an index of where we are at in the list. While also having access to the object itself.
+    We used i to track the index of which item we are looking at. Then we accessed the sku attribute by doing item.sku
+    checking if it is the SKU we are looking for. If it is we just delete that object...
+
+    - The biggest error we ran into was the total method.
+        - At first we set total to 0 and took the item in self.items and ran .total on it. This looks like
+        LineItem.total -> which returns the Money Object with the multiplied quantity -> we had then added
+        that Money Object to 0. Which failed because we can't add an int and a Money Object.
+
+        Solution:
+            - We modify the add method in the Money class to take in a Money Object. 
+            So what does this lead to? Well something we learned is that we can write a return
+            statement that returns a new Money object that takes the current.cents value and 
+            adds the other money.cents value. By doing this not only is each Money Object immutable.
+            But we always return a new Money object that is the sum of all previously added Money Values. 
