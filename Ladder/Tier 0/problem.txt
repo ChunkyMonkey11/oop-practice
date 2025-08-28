@@ -1,0 +1,24 @@
+Tier 0 — Warm-ups (modeling + clean code)
+0. Receipt Line Formatter (tiny)
+
+Goal: Turn messy inputs into clean, immutable value objects and format a receipt line.
+
+Build:
+
+Money(cents) (immutable) with add, mul, __str__ ($12.34).
+
+LineItem(sku, name, unit_price: Money, qty: int) with total() -> Money.
+
+Edge cases: negative qty → reject; zero price; large totals; rounding rules (multiplying).
+
+Tests:
+
+LineItem('A1','Socks', $299, 2).total() == $5.98
+
+qty <= 0 raises/returns error code.
+
+Okay so looking at the problem I see the test would take in money as cents. Im assuming as an object.
+So we can add the the value and multiply the value. We should also be able to print out the value of money as its dollar amount. 
+
+Money class has been built now we need to build the LineItem class.
+- SKU stands for stock keeping unit. 
