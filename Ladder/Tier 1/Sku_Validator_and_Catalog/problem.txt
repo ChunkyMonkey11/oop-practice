@@ -1,0 +1,14 @@
+Tier 1 — Add policies & validation
+2. SKU Validator & Catalog
+
+Goal: Validate SKUs against a catalog and prevent invalid cart entries.
+
+Build:
+
+Catalog.get(sku) -> Product(name, price: Money)
+
+Cart.add(sku, qty) consults Catalog.
+
+Edges: unknown SKU, out-of-stock flag, price changes mid-add (assume snapshot at add).
+
+Tests: unknown SKU rejected; in-stock passes; toggling stock blocks add.

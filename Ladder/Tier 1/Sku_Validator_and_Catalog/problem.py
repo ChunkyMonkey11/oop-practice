@@ -29,7 +29,6 @@ class LineItem:
         return self.unit_price.multiply(self.qty)
 
 
-
 class Cart:
     def __init__(self):
         self.items = []
@@ -54,19 +53,3 @@ class Cart:
             total = total.add(item.total())
         return total
     
-
-def test():
-    item1 = LineItem("A1", 'socks', Money(299), 2)
-    item2 = LineItem("A2", 'underwear', Money(101), 2)
-
-    cart = Cart()
-
-    cart.add(item1)
-
-    print(f"The total after adding item 1 is {cart.total()}")
-
-    cart.remove("A1")
-
-    print(f"The total of the cart after removing item with SKU A1 is {cart.total()}")
-
-test()
