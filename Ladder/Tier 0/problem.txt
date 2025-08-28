@@ -21,4 +21,5 @@ Okay so looking at the problem I see the test would take in money as cents. Im a
 So we can add the the value and multiply the value. We should also be able to print out the value of money as its dollar amount. 
 
 Money class has been built now we need to build the LineItem class.
-- SKU stands for stock keeping unit. 
+- SKU stands for stock keeping unit.
+

@@ -1,0 +1,30 @@
+What did I learn from Reciept_Line_Form???
+
+Well what did we even code?
+
+We wrote two classes. One called Money and the other LineItem
+
+Money:
+    The class Money reperesents Money as an object
+    this object has three methods. One to add, One to multiply,
+    and one to handle the string repersentation of the object.
+
+    -add:
+        - This returns a new Money Object that takes the current value in cents and adds a variable called amount.
+        Returns a new money object with the added amount
+    -multiply:
+        - This returns a new Money Object that takes the current amount of money and 
+        multiplys it by a scale amount. Returns a new Money Object
+
+    -__str__ :
+        - This returns the Money Object formatted as a string. But also
+        divides the cents /100 to get the dollar value. 
+
+LineItem:
+    The LineItem reperesents the LineItem as an object.
+    Has a constructor and a method called total.
+    It takes in a few parameters but most importantly it takes in
+    the Money Object as a parameter.
+
+    -total:
+        - returns the total dollar amount of a lineitem. 
