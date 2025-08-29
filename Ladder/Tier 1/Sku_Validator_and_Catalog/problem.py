@@ -53,3 +53,12 @@ class Cart:
             total = total.add(item.total())
         return total
     
+"--------------------------------"
+"""The classes above are to be used to solve the new problem. Do not change or even look at them unless absolutely needed."""
+
+# Requirments... 
+"""
+- Create a catalog class that can validate SKU's. 
+    - It can do this by having a list or dictonary. I prefer dictonary with valid key names and 0 or 1 to reperesent return statemnt.
+
+"""
